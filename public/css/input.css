@@ -1,0 +1,196 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Set font family */
+@font-face {
+  font-family: "Red Hat Display";
+  src: url("../fonts/RedHatDisplay-Variable.woff2") format("woff");
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Red Hat Display Italic";
+  src: url("../fonts/RedHatDisplay-Italic-Variable.woff2") format("woff");
+  font-display: swap;
+  font-style: normal;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  @apply bg-myWhite text-myBlack;
+}
+
+/* Button style */
+.btn-primary {
+  @apply text-white tracking-wide bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-center text-xs md:text-sm px-5 py-2.5 ease-in-out duration-300;
+}
+
+.btn-admin {
+  @apply text-white tracking-wide bg-emerald-500 hover:bg-emerald-600 focus:outline-none focus:ring-4 focus:ring-emerald-300 font-medium rounded-lg text-center text-xs md:text-sm px-5 py-2.5 ease-in-out duration-300;
+}
+
+.btn-alternative {
+  @apply py-2.5 px-5 text-xs md:text-sm font-medium text-myBlack tracking-wide text-center rounded-lg border border-gray-400 hover:bg-gray-200 hover:text-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-300 ease-in-out duration-300;
+}
+
+.btn-dark {
+  @apply text-white bg-myBlack hover:bg-gray-800 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-center text-xs md:text-sm px-5 py-2.5 ease-in-out duration-300;
+}
+
+.btn-light {
+  @apply text-myBlack bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-center text-xs md:text-sm px-5 py-2.5 ease-in-out duration-300;
+}
+
+.btn-success {
+  @apply text-white bg-green-700 hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-xs md:text-sm px-5 py-2.5 text-center ease-in-out duration-300;
+}
+
+.btn-warning {
+  @apply text-white tracking-wide bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-center text-xs md:text-sm px-5 py-2.5 ease-in-out duration-300;
+}
+
+.btn-danger {
+  @apply text-white bg-red-700 hover:bg-red-800 focus:outline-none focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-xs md:text-sm px-5 py-2.5 text-center ease-in-out duration-300;
+}
+
+/* Disabled state */
+.btn-primary:disabled {
+  @apply text-white tracking-wide bg-blue-400 cursor-not-allowed opacity-50 font-medium rounded-lg text-center text-xs md:text-sm px-5 py-2.5 ease-in-out duration-300;
+}
+
+.btn-admin:disabled {
+  @apply text-white tracking-wide bg-emerald-400 cursor-not-allowed opacity-50 font-medium rounded-lg text-center text-xs md:text-sm px-5 py-2.5 ease-in-out duration-300;
+}
+
+.btn-alternative:disabled {
+  @apply py-2.5 px-5 text-xs md:text-sm font-medium text-myBlack tracking-wide text-center rounded-lg border border-gray-400 hover:bg-gray-200 hover:text-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-300 ease-in-out duration-300 cursor-not-allowed opacity-50;
+}
+
+.btn-dark:disabled {
+  @apply text-white bg-myBlack cursor-not-allowed opacity-50 hover:bg-gray-800 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-center text-xs md:text-sm px-5 py-2.5 ease-in-out duration-300;
+}
+
+.btn-light:disabled {
+  @apply text-myBlack bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-center text-xs md:text-sm px-5 py-2.5 ease-in-out duration-300 cursor-not-allowed opacity-50;
+}
+
+.btn-success:disabled {
+  @apply text-white bg-green-400 cursor-not-allowed opacity-50 hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-xs md:text-sm px-5 py-2.5 text-center ease-in-out duration-300;
+}
+
+.btn-warning:disabled {
+  @apply text-white bg-yellow-400 cursor-not-allowed opacity-50 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-center text-xs md:text-sm px-5 py-2.5 ease-in-out duration-300;
+}
+
+.btn-danger:disabled {
+  @apply text-white bg-red-400 cursor-not-allowed opacity-50 hover:bg-red-800 focus:outline-none focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-xs md:text-sm px-5 py-2.5 text-center ease-in-out duration-300;
+}
+
+/* Icon style */
+.icon-primary {
+  @apply text-white tracking-wide bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-center text-xs md:text-sm px-2 md:px-3 py-1.5 md:py-2 ease-in-out duration-300;
+}
+
+.icon-admin {
+  @apply text-white tracking-wide bg-emerald-500 hover:bg-emerald-600 focus:outline-none focus:ring-4 focus:ring-emerald-300 font-medium rounded-lg text-center text-xs md:text-sm px-2 md:px-3 py-1.5 md:py-2 ease-in-out duration-300;
+}
+
+.icon-alternative {
+  @apply px-2 md:px-3 py-1.5 md:py-2 text-xs md:text-sm font-medium text-myBlack text-center rounded-lg border border-gray-400 hover:bg-gray-200 hover:text-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-300 ease-in-out duration-300;
+}
+
+.icon-dark {
+  @apply text-white hover:bg-myBlack focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-center text-xs md:text-sm px-2 md:px-3 py-1.5 md:py-2 ease-in-out duration-300;
+}
+
+.icon-light {
+  @apply text-myBlack bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-center text-xs md:text-sm px-2 md:px-3 py-1.5 md:py-2 ease-in-out duration-300;
+}
+
+.icon-success {
+  @apply text-white bg-green-700 hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-xs md:text-sm px-2 md:px-3 py-1.5 md:py-2 text-center ease-in-out duration-300;
+}
+
+.icon-warning {
+  @apply text-white hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-xs md:text-sm px-2 md:px-3 py-1.5 md:py-2 text-center ease-in-out duration-300;
+}
+
+.icon-danger {
+  @apply text-white bg-red-700 hover:bg-red-800 focus:outline-none focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-xs md:text-sm px-2 md:px-3 py-1.5 md:py-2 text-center ease-in-out duration-300;
+}
+
+/* Disabled state */
+.icon-primary:disabled {
+  @apply text-white tracking-wide bg-blue-400 cursor-not-allowed opacity-50 font-medium rounded-lg text-center text-xs md:text-sm px-2 md:px-3 py-1.5 md:py-2 ease-in-out duration-300;
+}
+
+.icon-admin:disabled {
+  @apply text-white tracking-wide bg-emerald-400 cursor-not-allowed opacity-50 font-medium rounded-lg text-center text-xs md:text-sm px-2 md:px-3 py-1.5 md:py-2 ease-in-out duration-300;
+}
+
+.icon-alternative:disabled {
+  @apply px-2 md:px-3 py-1.5 md:py-2 text-xs md:text-sm font-medium text-myBlack text-center rounded-lg border border-gray-400 hover:bg-gray-200 hover:text-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-300 ease-in-out duration-300 cursor-not-allowed opacity-50;
+}
+
+.icon-dark:disabled {
+  @apply text-white hover:bg-myBlack focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-center text-xs md:text-sm px-2 md:px-3 py-1.5 md:py-2 ease-in-out duration-300 cursor-not-allowed opacity-50;
+}
+
+.icon-light:disabled {
+  @apply text-myBlack bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-center text-xs md:text-sm px-2 md:px-3 py-1.5 md:py-2 ease-in-out duration-300 cursor-not-allowed opacity-50;
+}
+
+.icon-success:disabled {
+  @apply text-white bg-green-400 cursor-not-allowed opacity-50 hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-xs md:text-sm px-2 md:px-3 py-1.5 md:py-2 text-center ease-in-out duration-300;
+}
+
+.icon-warning:disabled {
+  @apply text-white hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-xs md:text-sm px-2 md:px-3 py-1.5 md:py-2 text-center ease-in-out duration-300 cursor-not-allowed opacity-50;
+}
+
+.icon-danger:disabled {
+  @apply text-white bg-red-400 cursor-not-allowed opacity-50 hover:bg-red-800 focus:outline-none focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-xs md:text-sm px-2 md:px-3 py-1.5 md:py-2 text-center ease-in-out duration-300;
+}
+
+/* Input style */
+.input-admin {
+  @apply block w-full p-2.5 mt-2 rounded-md bg-gray-50 border border-gray-300 placeholder-gray-400 text-myBlack focus:outline-none focus:ring-emerald-500 focus:border-emerald-500 focus:z-10 focus:shadow-md text-sm md:text-base;
+}
+
+.input-customers {
+  @apply block w-full p-2.5 mt-2 rounded-md bg-gray-50 border border-gray-300 placeholder-gray-400 text-myBlack focus:outline-none focus:ring-blue-700 focus:border-blue-700 focus:z-10 focus:shadow-md text-sm md:text-base;
+}
+
+.input-error {
+  @apply block w-full p-2.5 mt-2 rounded-md bg-gray-50 border border-gray-300 placeholder-gray-400 text-myBlack focus:outline-none focus:ring-red-500 focus:border-red-500 focus:z-10 focus:shadow-md text-sm md:text-base;
+}
+
+.input-error-message {
+  @apply inline-block text-xs tracking-wide text-red-500;
+}
+
+.alert-success {
+  @apply p-2.5 mb-4 rounded-md bg-green-50 border border-green-400 text-green-800 font-medium text-sm md:text-base tracking-wide text-center;
+}
+
+.badge-gray {
+  @apply inline-flex px-2 text-xs font-semibold leading-5 rounded-full shadow-sm text-gray-500 bg-gray-100
+}
+
+.badge-yellow {
+  @apply inline-flex px-2 text-xs font-semibold leading-5 rounded-full shadow-sm text-yellow-500 bg-yellow-100
+}
+
+.badge-blue {
+  @apply inline-flex px-2 text-xs font-semibold leading-5 rounded-full shadow-sm text-blue-500 bg-blue-100
+}
+
+.badge-green {
+  @apply inline-flex px-2 text-xs font-semibold leading-5 rounded-full shadow-sm text-green-500 bg-green-100
+}
+
+.badge-red {
+  @apply inline-flex px-2 text-xs font-semibold leading-5 rounded-full shadow-sm text-red-500 bg-red-100
+}
